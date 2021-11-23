@@ -8,8 +8,8 @@ export default class RegisterPageObject {
   }
 
   fillFormAndSubmit(email, password) {
-    cy.get('#reg_email').type(email);
-    cy.get('#reg_password').type(password);
+    cy.get('#reg_email').type(email, { force: true });
+    cy.get('#reg_password').type(password, { force: true });
     cy.get(':nth-child(4) > .button').click();
     return this;
   }

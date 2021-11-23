@@ -10,7 +10,13 @@
     "cy:open": "cypress open"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
     "faker": "^5.5.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
